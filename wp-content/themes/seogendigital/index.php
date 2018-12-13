@@ -9,20 +9,11 @@
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/favicon.ico">
-    
-    <!-- CSS 
-    ========================= -->
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bootstrap.min.css"> 
-    
-   
-    <!-- Main Style CSS -->
-    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/style.css">
-    
-    <!-- Modernizer JS -->
     <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <!-- head de wordpress -->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -618,8 +609,8 @@
     
     <!-- Plugins CSS -->
   <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/plugins.css">
-    
-
+   <!-- footer de Wordpress --> 
+  <?php wp_footer(); ?>
 </body> 
 
 </html>
