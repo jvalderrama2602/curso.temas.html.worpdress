@@ -10,8 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/favicon.ico">
-   
-    <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/modernizr-2.8.3.min.js"></script>
     <!-- head de wordpress -->
     <?php wp_head(); ?>
 </head>
@@ -580,30 +578,6 @@
     
 </div>
 <!-- Main Wrapper End -->
-
-
-
-
-
-
-
-<!-- JS
-============================================ -->
-
-
-<!-- jQuery JS -->
-<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/jquery-1.12.4.min.js"></script>
-<!-- Popper JS -->
-<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/popper.min.js"></script>
-<!-- Bootstrap JS -->
-<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/bootstrap.min.js"></script>
-<!-- Plugins JS -->
-<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/plugins.js"></script>
-<!-- Ajax Mail -->
-<!--<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/ajax-mail.js"></script>-->
-<!-- Main JS -->
-<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/main.js"></script>
-
  <!-- Fonts CSS -->
  <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bicon.min.css">
     
