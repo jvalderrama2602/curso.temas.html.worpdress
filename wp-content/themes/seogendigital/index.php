@@ -1,32 +1,28 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html class="no-js" <?php language_attributes();?>>
+
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?> ">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Seomar - SEO & Digital Marketing Bootstrap 4 Template</title>
-    <meta name="description" content="">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Favicon -->
-    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/favicon.ico">
     
     <!-- CSS 
     ========================= -->
    
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bootstrap.min.css"> 
     
-    <!-- Fonts CSS -->
-    <link rel="stylesheet" href="assets/css/bicon.min.css">
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="assets/css/plugins.css">
-    
+   
     <!-- Main Style CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/style.css">
     
     <!-- Modernizer JS -->
-    <script src="assets/js/vendor/modernizr-2.8.3.min.js"></script>
+    <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
 
 <body>
@@ -42,7 +38,7 @@
                     <div class="col-lg-4">
                         <!-- logo Start -->
                         <div class="logo">
-                            <a href="index.html"><img src="assets/images/logo/logo.png" alt=""></a>
+                            <a href="index.html"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/logo/logo.png" alt=""></a>
                         </div><!--// logo End -->
                     </div>
                     <div class="col-lg-8">
@@ -99,7 +95,7 @@
         <div class="single-slide" style="background-image: url(http://demo.devitems.com/seomar-v1/seomar/assets/images/slider/slide-bg-1.png)">
             <div class="home-decor">
                 <div class="home-overlay-img-1">
-                    <img src="assets/images/slider/seomar02.png" alt="">
+                    <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/slider/seomar02.png" alt="">
                 </div> 
             </div>
             <!-- Hero Content One Start -->
@@ -119,7 +115,7 @@
                     <div class="col-xl-6 col-lg-5 col-md-5 order-md-2 order-1"> 
                         <!-- slider-inner-image Start -->
                         <div class="slider-inner-image">
-                            <img src="assets/images/slider/slide-inner-1.png" alt="">
+                            <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/slider/slide-inner-1.png" alt="">
                         </div><!--// slider-inner-image End -->
                     </div>
                 </div>
@@ -162,7 +158,7 @@
                 <div class="col-lg-5 offset-lg-1 order-lg-2 order-1">
                     <!-- about-us-image Start -->
                     <div class="about-us-image wow fadeInBottom" data-wow-duration="1s">
-                        <img src="assets/images/about/about-02.png" alt="">
+                        <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/about/about-02.png" alt="">
                     </div><!--// about-us-image End -->
                 </div>
             </div>
@@ -288,7 +284,7 @@
                 <div class="col-lg-6 col-md-4">
                     <!-- Video-icon-wrap Start -->
                     <div class="video-icon-wrap">
-                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=0O2aH4XLbto"><img src="assets/images/icon/video-icon.png" alt=""></a>
+                        <a class="popup-youtube" href="https://www.youtube.com/watch?v=0O2aH4XLbto"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/video-icon.png" alt=""></a>
                     </div><!--// Video-icon-wrap End -->
                 </div>
             </div>
@@ -392,15 +388,15 @@
                     <!-- testimonial-wrap Start -->
                     <div class="testimonial-wrap text-center">
                         <div class="testimonial-image ">
-                            <img src="assets/images/review/comment-3.jpg" alt="">
+                            <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/review/comment-3.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
                             <ul>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start-o.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start-o.png" alt=""></a></li>
                             </ul>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,page when looking at its layout. The point</p>
@@ -415,15 +411,15 @@
                     <!-- testimonial-wrap Start -->
                     <div class="testimonial-wrap text-center">
                         <div class="testimonial-image ">
-                            <img src="assets/images/review/comment-2.jpg" alt="">
+                            <img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/review/comment-2.jpg" alt="">
                         </div>
                         <div class="testimonial-content">
                             <ul>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start.png" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/icon/start-o.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start.png" alt=""></a></li>
+                                <li><a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/icon/start-o.png" alt=""></a></li>
                             </ul>
                             <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
                              The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,page when looking at its layout. The point</p>
@@ -459,7 +455,7 @@
                     <!-- single-latest-blog Start -->
                     <div class="single-latest-blog mb--30 mt--30">
                         <div class="latest-blog-image">
-                            <a href="blog-details-left-sidebar.html"><img src="assets/images/blog/blog-01.jpg" alt=""></a>
+                            <a href="blog-details-left-sidebar.html"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/blog/blog-01.jpg" alt=""></a>
                         </div>
                         <div class="latest-blog-cont">
                             <h3><a href="blog-details-left-sidebar.html">Digatal marketing is one of the</a></h3>
@@ -471,7 +467,7 @@
                     <!-- single-latest-blog Start -->
                     <div class="single-latest-blog mb--30 mt--30">
                         <div class="latest-blog-image">
-                            <a href="blog-details-left-sidebar.html"><img src="assets/images/blog/blog-04.jpg" alt=""></a>
+                            <a href="blog-details-left-sidebar.html"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/blog/blog-06.jpg" alt=""></a>
                         </div>
                         <div class="latest-blog-cont">
                             <h3><a href="blog-details-left-sidebar.html">Keywords research is more then</a></h3>
@@ -483,7 +479,7 @@
                     <!-- single-latest-blog Start -->
                     <div class="single-latest-blog mb--30 mt--30">
                         <div class="latest-blog-image">
-                            <a href="blog-details-left-sidebar.html"><img src="assets/images/blog/blog-06.jpg" alt=""></a>
+                            <a href="blog-details-left-sidebar.html"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/blog/blog-01.jpg" alt=""></a>
                         </div>
                         <div class="latest-blog-cont">
                             <h3><a href="blog-details-left-sidebar.html">For SEO marketing you have to</a></h3>
@@ -495,7 +491,7 @@
                     <!-- single-latest-blog Start -->
                     <div class="single-latest-blog mb--30 mt--30">
                         <div class="latest-blog-image">
-                            <a href="blog-details-left-sidebar.html"><img src="assets/images/blog/blog-02.jpg" alt=""></a>
+                            <a href="blog-details-left-sidebar.html"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/blog/blog-04.jpg" alt=""></a>
                         </div>
                         <div class="latest-blog-cont">
                             <h3><a href="blog-details-left-sidebar.html">Keywords need to unlimited</a></h3>
@@ -518,7 +514,7 @@
                         <!-- Footer-info Start -->
                         <div class="footer-info mt--60">
                             <div class="footer-logo">
-                                <a href="#"><img src="assets/images/logo/logo-2.png" alt=""></a>
+                                <a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/logo/logo-2.png" alt=""></a>
                             </div>
                             <p>It is a long established fact that a reader will page when looking at its layout.  all reader will page when looking </p>
                             <ul class="social">
@@ -563,12 +559,12 @@
                                 <h3>INSTAGRAM FEED</h3>
                             </div>
                             <ul class="footer-list-instagram">
-                                <li><a href="#"><img src="assets/images/instagram/ins-1.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/instagram/ins-2.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/instagram/ins-3.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/instagram/ins-4.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/instagram/ins-5.jpg" alt=""></a></li>
-                                <li><a href="#"><img src="assets/images/instagram/ins-6.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-1.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-2.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-3.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-4.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-5.jpg" alt=""></a></li>
+                                <li><a href="#"><img src="http://demo.devitems.com/seomar-v1/seomar/assets/images/instagram/ins-6.jpg" alt=""></a></li>
                             </ul>
                         </div><!--// Footer-info End -->
                     </div>
@@ -594,23 +590,36 @@
 </div>
 <!-- Main Wrapper End -->
 
+
+ <!-- Fonts CSS -->
+ <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bicon.min.css">
+    
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/plugins.css">
+    
+
+
+
+
 <!-- JS
 ============================================ -->
 
+
 <!-- jQuery JS -->
-<script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/jquery-1.12.4.min.js"></script>
 <!-- Popper JS -->
-<script src="assets/js/popper.min.js"></script>
+<!--<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/popper.min.js"></script>-->
 <!-- Bootstrap JS -->
-<script src="assets/js/bootstrap.min.js"></script>
+<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/bootstrap.min.js"></script>
 <!-- Plugins JS -->
-<script src="assets/js/plugins.js"></script>
+<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/plugins.js"></script>
 <!-- Ajax Mail -->
-<script src="assets/js/ajax-mail.js"></script>
+<!--<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/ajax-mail.js"></script>-->
 <!-- Main JS -->
-<script src="assets/js/main.js"></script>
+<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/main.js"></script>
 
 
-</body>
+
+</body> 
 
 </html>
