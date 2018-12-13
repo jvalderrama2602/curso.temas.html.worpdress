@@ -591,12 +591,7 @@
 <!-- Main Wrapper End -->
 
 
- <!-- Fonts CSS -->
- <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bicon.min.css">
-    
-    <!-- Plugins CSS -->
-    <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/plugins.css">
-    
+
 
 
 
@@ -608,7 +603,7 @@
 <!-- jQuery JS -->
 <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/vendor/jquery-1.12.4.min.js"></script>
 <!-- Popper JS -->
-<!--<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/popper.min.js"></script>-->
+<script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/bootstrap.min.js"></script>
 <!-- Plugins JS -->
@@ -618,7 +613,12 @@
 <!-- Main JS -->
 <script src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/js/main.js"></script>
 
-
+ <!-- Fonts CSS -->
+ <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/bicon.min.css">
+    
+    <!-- Plugins CSS -->
+  <link rel="stylesheet" href="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/css/plugins.css">
+    
 
 </body> 
 
