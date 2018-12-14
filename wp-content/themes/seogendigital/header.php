@@ -22,14 +22,47 @@
                     <div class="col-lg-4">
                         <!-- logo Start -->
                         <div class="logo">
-                            <a href="index.html"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/logo/logo.png" alt=""></a>
+                            <a href="<?php echo esc_url(home_url('/')); ?>"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/logo/logo.png" alt=""></a>
                         </div><!--// logo End -->
                     </div>
                     <div class="col-lg-8">
                         <!-- main-menu-area Start -->
                         <div class="main-menu">
-                            <nav class="main-navigation">
-                                <ul>
+                      <!--  <nav class="main-navigation">-->
+                        <?php 
+                                if(has_nav_menu('menu_ppal')):
+
+                                wp_nav_menu(array( 'menu' => '11',
+                                 'container' => 'nav', 
+                                 'container_class' =>'main-navigation',
+                                 'menu_class' => 'main-navigation', 
+                                 'menu_id' => '',
+                                 'echo' => true,
+                                 'fallback_cb' => 'wp_page_menu',
+                                 'before' => '', 
+                                 'after' => '', 
+                                 'link_before' => '', 
+                                 'link_after' => '', 
+                                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                 'item_spacing' => 'preserve',
+                                 'depth' => 0, 
+                                 'walker' => '',
+                                 'theme_location' => 'menu_ppal'                 
+                                    
+                                ));
+                            else:
+
+                                wp_list_pages('title_li'); 
+                                
+                            endif;
+                                ?>
+
+                          
+
+
+                         <!--       <ul>
+                        
+
                                     <li class="active"><a href="index.html">HOME</a>
                                         <ul class="sub-menu">
                                             <li><a href="index.html">Home Page 1</a></li>
@@ -59,8 +92,10 @@
                                         </ul>
                                     </li>
                                     <li><a href="contact.html">CONTACT</a></li>
-                                </ul>
-                            </nav>
+
+                                 
+                                </ul>-->
+                            <!--</nav>-->
                         </div><!--// main-menu-area End -->
                     </div>
                     <div class="col">

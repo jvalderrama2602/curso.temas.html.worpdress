@@ -77,3 +77,35 @@ function add_async_attribute($tag, $handle) {
  }
  add_filter('style_loader_tag', 'add_async_attribute_css', 10, 2);
 
+
+ /* Activando el soporte de imagen destacada */
+ if(!function_exists('gendigital_setup')):
+   function gendigital_setup(){
+      add_theme_support('post-thumbnails');
+   }
+ endif;
+ add_action('after_setup_theme','gendigital_setup');
+
+
+ /*  Activando menu*/
+ if(!function_exists('gendigital_menu')):
+   function gendigital_menu(){
+      register_nav_menus(array(
+         'menu_ppal'=>__('Menú Principal','gendigital'),
+         'social'=>__('Menú de Redes Sociales','gendigital')
+      ));
+   }
+ endif;
+
+ add_action('init','gendigital_menu');
+
+
+ function atg_menu_classes($classes, $item, $args) {
+   if('menu_ppal' === $args->theme_location) {
+     $classes[] = "main-navigation";
+
+   }
+   return $classes;
+   echo $classes;
+ }
+ add_filter('nav_menu_css_class', 'atg_menu_classes', 10, 4);

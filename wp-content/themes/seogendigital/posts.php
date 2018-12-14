@@ -18,7 +18,7 @@
                     <!-- single-latest-blog Start -->
                     <div class="single-latest-blog mb--30 mt--30">
                         <div class="latest-blog-image">
-                            <a href="<?php the_permalink() ?>"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/blog/blog-01.jpg" alt=""></a>
+                            <a href="<?php the_permalink() ?>"><?php the_post_thumbnail(); ?></a>
                         </div>
                         <div class="latest-blog-cont">
                             <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
