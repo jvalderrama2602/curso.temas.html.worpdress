@@ -82,6 +82,14 @@ function add_async_attribute($tag, $handle) {
  if(!function_exists('gendigital_setup')):
    function gendigital_setup(){
       add_theme_support('post-thumbnails');
+      /*Activar HTml 5*/
+      add_theme_support('html5',array(
+         'comment-list',
+         'comment-form',
+         'search-form',
+         'galley',
+         'caption'
+      ));
    }
  endif;
  add_action('after_setup_theme','gendigital_setup');
@@ -109,3 +117,30 @@ function add_async_attribute($tag, $handle) {
    echo $classes;
  }
  add_filter('nav_menu_css_class', 'atg_menu_classes', 10, 4);
+
+ /*  Activando widgets*/
+ if(!function_exists('gendigital_widgets')):
+   function gendigital_widgets(){
+      register_sidebar(array(
+      'name' => __('Sidebar Principal', 'gendigital'),
+      'id' => 'main_sidebar',
+      'description' => __('Este es el sidebar principal','gendigital'),
+      'before_widget' => '<article id="%1$s" class="Widget %2$s">',
+      'after_widget' => '</article>',
+      'before_title' => '<h3>',
+      'after_title' => '</h3>'
+      ));
+
+      register_sidebar(array(
+         'name' => __('Sidebar Footer', 'gendigital'),
+         'id' => 'footer_sidebar',
+         'description' => __('Este es el sidebar footer','gendigital'),
+         'before_widget' => '<article id="%1$s" class="Widget %2$s">',
+         'after_widget' => '</article>',
+         'before_title' => '<h3>',
+         'after_title' => '</h3>'
+         ));
+   }
+ endif;
+ add_action('widgets_init', 'gendigital_widgets');
+
