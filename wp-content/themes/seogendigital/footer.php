@@ -11,12 +11,38 @@
                                 <a href="#"><img src="<?php echo get_bloginfo('wpurl'); ?>/wp-content/themes/seogendigital/assets/images/logo/logo-2.png" alt=""></a>
                             </div>
                             <p>It is a long established fact that a reader will page when looking at its layout.  all reader will page when looking </p>
-                            <ul class="social">
+                            <?php 
+                             wp_nav_menu(array( 'menu' => '11',
+                                 'container' => 'ul', 
+                                 'container_class' =>'social',
+                                 'menu_class' => 'social', 
+                                 'menu_id' => '',
+                                 'echo' => true,
+                                 'fallback_cb' => 'wp_page_menu',
+                                 'before' => '', 
+                                 'after' => '', 
+                                 'link_before' => '', 
+                                 'link_after' => '', 
+                                 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                                 'item_spacing' => 'preserve',
+                                 'depth' => 0, 
+                                 'walker' => '',
+                                 'theme_location' => 'social'                 
+                                    
+                                ));
+                        
+                                ?>
+
+                            
+                            
+                            
+                            
+                            <!--<ul class="social">
                                 <li><a href="#"><i class="bi bi-facebook"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter-bird"></i></a></li>
                                 <li><a href="#"><i class="bi bi-twitter"></i></a></li>
                                 <li><a href="#"><i class="bi bi-youtube"></i></a></li>
-                            </ul>
+                            </ul>-->
                         </div><!--// Footer-info End -->
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -72,7 +98,7 @@
                 <div class="row">
                     <div class="col-lg-12">
                         <div class="footer-bottom-inner text-center">
-                            <p>Copyright &copy; Seomar 2018 All Right Reserved</p>
+                            <p>Copyright &copy; GenDigital <?php echo date('Y'); ?> Todos los derechos reservados</p>
                         </div>
                     </div>
                 </div>
